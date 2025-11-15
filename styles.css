@@ -176,7 +176,63 @@ header.header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* ---------- KONTAKT ---------- */
+.kahoot {
+  background-color: #e38b52; /* světlý korálovo-oranžový odstín */
+  color: var(--text-light);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.kahoot h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--text-light);
+  margin-bottom: 25px;
+}
+
+.kahoot p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.kahoot .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.kahoot .gallery-photo {
+  flex: 1 1 calc(25% - 15px);
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kahoot .gallery-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .kahoot .gallery-photo {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 600px) {
+  .kahoot .gallery-photo {
+    flex: 1 1 100%;
+  }
+}
+
+
 .kontakt {
   background-color: var(--dark-brown);
   color: var(--text-light);
@@ -216,3 +272,5 @@ header.header {
   }
   header.header h1 {
     font-size: 2.2rem;
+  }
+}
