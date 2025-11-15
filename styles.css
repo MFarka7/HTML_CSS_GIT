@@ -39,7 +39,7 @@ a:hover {
 
 header.header {
   background: linear-gradient(rgba(74,52,36,0.85), rgba(74,52,36,0.85)),
-              url("images/hero-bg.jpg") center/cover no-repeat;
+              url("fotky/priroda_Bubak.jpg") center/cover no-repeat;
   color: var(--text-light);
   text-align: center;
   padding: 120px 20px;
