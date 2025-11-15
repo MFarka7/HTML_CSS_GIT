@@ -12,7 +12,7 @@
   --bg-light: #fafafa;
 }
 
-/* ------------------------ ZÁKLAD ------------------------ */
+/* ---------- GLOBAL ---------- */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -35,20 +35,35 @@ a:hover {
   color: var(--coral);
 }
 
-/* ------------------------ HEADER ------------------------ */
+/* ---------- LAYOUT ---------- */
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ---------- HEADER ---------- */
 header.header {
-  background-color: var(--dark-brown);
-  color: var(--text-light);
-  padding: 100px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-dark);
 }
 
 .header-wrapper {
+  background-color: #fffaf6;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  padding: 60px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
   gap: 40px;
 }
 
@@ -59,13 +74,13 @@ header.header {
 
 .header-text h1 {
   font-size: 3rem;
-  color: var(--peach);
+  color: var(--dark-brown);
   margin-bottom: 15px;
 }
 
 .header-text .motto {
   font-size: 1.2rem;
-  color: var(--beige);
+  color: var(--terracotta);
   max-width: 500px;
   line-height: 1.6;
 }
@@ -78,48 +93,56 @@ header.header {
 
 .header-photo {
   width: 100%;
-  max-width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ------------------------ NAVIGACE ------------------------ */
+.header-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- NAVIGACE ---------- */
 .nav-links {
-  margin-top: 50px;
+  margin-top: 40px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .nav-links a {
-  color: var(--peach);
-  font-weight: 500;
+  display: inline-block;
+  background-color: var(--peach);
+  color: var(--dark-brown);
+  font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 3px;
 }
 
 .nav-links a:hover {
-  color: var(--beige);
-  border-bottom: 2px solid var(--beige);
+  background-color: var(--terracotta);
+  color: var(--text-light);
   transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------------ HLAVNÍ OBSAH ------------------------ */
-.content-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+.nav-links a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------- SECTIONS ---------- */
 .section {
   background-color: var(--bg-light);
   border-radius: 18px;
@@ -134,7 +157,6 @@ header.header {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Styl pro nadpisy s emoji */
 .section h2 {
   display: inline-flex;
   align-items: center;
@@ -145,7 +167,7 @@ header.header {
   color: var(--dark-brown);
 }
 
-/* ------------------------ SEKCE BARVY ------------------------ */
+/* ---------- INDIVIDUAL SECTION COLORS ---------- */
 .o-mne {
   background-color: #f8e8dd;
 }
@@ -169,7 +191,11 @@ header.header {
   color: var(--text-light);
 }
 
-/* ------------------------ GALERIE ------------------------ */
+.kontakt h2 {
+  color: var(--peach);
+}
+
+/* ---------- GALLERY ---------- */
 .gallery,
 .gallery-nature {
   display: grid;
@@ -194,7 +220,7 @@ header.header {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------------ KONTAKT ------------------------ */
+/* ---------- KONTAKT ---------- */
 .kontakt ul {
   list-style: none;
   padding: 0;
@@ -209,7 +235,7 @@ header.header {
   color: var(--beige);
 }
 
-/* ------------------------ FOOTER ------------------------ */
+/* ---------- FOOTER ---------- */
 .footer {
   background-color: var(--dark-brown);
   color: var(--text-light);
@@ -219,7 +245,7 @@ header.header {
   margin-top: 60px;
 }
 
-/* ------------------------ RESPONSIVITA ------------------------ */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .header-wrapper {
     flex-direction: column;
