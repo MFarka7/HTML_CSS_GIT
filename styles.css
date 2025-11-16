@@ -131,3 +131,22 @@ p {
     font-size: 1.05em;
     margin-bottom: 22px;
 }
+/* Patička */
+.footer {
+    max-width: 950px;
+    margin: 30px auto 50px;
+    padding: 25px 40px;
+    background: linear-gradient(135deg, #c48b9f 0%, #a86f85 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(196, 139, 159, 0.3);
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 0.95em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
