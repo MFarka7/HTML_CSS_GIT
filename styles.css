@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    background-color: #f4f4f4;
+    background-color: #e6eced;
 }
 
 /* Style for the H1 heading */
@@ -29,4 +29,9 @@ nav ul {
     margin: 20px 0; /* mezera kolem menu*/
     display: flex;
     gap: 40px; /*větší mezery mezi položkami */
+}
+
+nav ul li a {
+    text-decoration: none; /*žádné podtržení */
+    color: #450edd;
 }
