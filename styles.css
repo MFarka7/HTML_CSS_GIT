@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    background-color: #e6eced;
+    background-color: #e8f4f8;
 }
 
 /* Style for the H1 heading */
@@ -28,10 +28,17 @@ nav ul {
     padding: 0;
     margin: 20px 0; /* mezera kolem menu*/
     display: flex;
+    justify-content: center; /* vycentrovat menu */
     gap: 40px; /*větší mezery mezi položkami */
 }
 
 nav ul li a {
     text-decoration: none; /*žádné podtržení */
     color: #450edd;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+nav ul li a:hover {
+    color: #0a9396;
 }
