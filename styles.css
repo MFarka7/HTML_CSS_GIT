@@ -17,3 +17,12 @@ p {
     color: #555555; /* Gray color */
     line-height: 1.6;
 }
+.profile-photo {
+    width: 150px;         /* šířka obrázku */
+    height: 150px;        /* výška obrázku */
+    object-fit: cover;    /* ořízne obrázek, aby vyplnil rámeček */
+    border-radius: 50%;   /* udělá z rámečku kruh */
+    border: 3px solid #333366; 
+    display: block;
+    margin-block-end: auto ;
+}
