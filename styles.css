@@ -1,19 +1,107 @@
-/* Apply a style to the entire body */
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 40px;
-    background-color: #f4f4f4;
+    background-color: #7097c6;
+    font-size: 16px;
+    color: #fff;
 }
 
-/* Style for the H1 heading */
-h1 {
-    color: #333366; /* Dark blue color */
-    border-bottom: 2px solid #333366;
-    padding-bottom: 10px;
+.header-menu {
+    width: 400px;
+    margin-bottom: 20px;
+    font-size: 25px;}
+
+
+
+.header-menu-items a {
+    display: block;
+    padding: 5px 0;
+    color: #f5f4f4;
+    text-decoration: none;
+    
+}
+.header-menu-items a:hover {
+    background-color: #5684b4;
+    color: #fff;
+    
 }
 
-/* Style for the paragraph */
-p {
-    color: #555555; /* Gray color */
-    line-height: 1.6;
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 30px;
+    color: #fff;
+}
+
+.course-text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.skills-text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.skills-list {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.tools-text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.tools-list {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.links-list {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.links-list a {
+    color: #fff;
+    text-decoration: none;
+}
+.links-text {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #7097c6;
+    font-size: 20px;
+    color: #fff;
+}
+
+.links-list a:hover {
+    color: rgb(233, 233, 171);
+    text-decoration: underline;
 }
